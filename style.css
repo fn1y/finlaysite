@@ -1,5 +1,5 @@
 /*-----------------------------------------------------------------------------------
-	    finlaysite export
+	    Finlay
         Built with Blocs
 -----------------------------------------------------------------------------------*/
  
@@ -40,13 +40,6 @@ a:hover{text-decoration: none; cursor:pointer;}
 	padding-right:0;
 }
 
-
-/* Sizes */
-
-.bloc-lg{
-	padding:100px 50px;
-}
-
 /* = Full Screen Blocs 
 -------------------------------------------------------------- */
 
@@ -75,6 +68,70 @@ a:hover{text-decoration: none; cursor:pointer;}
 }
 .bloc-fill-screen .fill-bloc-bottom-edge{
 	align-self: flex-end;
+}
+
+
+/* Background Styles */
+
+.bg-center,.bg-l-edge,.bg-r-edge,.bg-t-edge,.bg-b-edge,.bg-tl-edge,.bg-bl-edge,.bg-tr-edge,.bg-br-edge,.bg-repeat{
+	-webkit-background-size: auto!important;
+	-moz-background-size: auto!important;
+	-o-background-size: auto!important;
+	background-size: auto!important;
+}
+.bg-repeat{
+	background:repeat;
+}
+
+
+/* Dark theme */
+
+.d-bloc{
+	color:rgba(255,255,255,.7);
+}
+.d-bloc button:hover{
+	color:rgba(255,255,255,.9);
+}
+.d-bloc .icon-round,.d-bloc .icon-square,.d-bloc .icon-rounded,.d-bloc .icon-semi-rounded-a,.d-bloc .icon-semi-rounded-b{
+	border-color:rgba(255,255,255,.9);
+}
+.d-bloc .divider-h span{
+	border-color:rgba(255,255,255,.2);
+}
+.d-bloc .a-btn,.d-bloc .navbar a, .d-bloc a .icon-sm, .d-bloc a .icon-md, .d-bloc a .icon-lg, .d-bloc a .icon-xl, .d-bloc h1 a, .d-bloc h2 a, .d-bloc h3 a, .d-bloc h4 a, .d-bloc h5 a, .d-bloc h6 a, .d-bloc p a{
+	color:rgba(255,255,255,.6);
+}
+.d-bloc .a-btn:hover,.d-bloc .navbar a:hover,.d-bloc a:hover .icon-sm, .d-bloc a:hover .icon-md, .d-bloc a:hover .icon-lg, .d-bloc a:hover .icon-xl, .d-bloc h1 a:hover, .d-bloc h2 a:hover, .d-bloc h3 a:hover, .d-bloc h4 a:hover, .d-bloc h5 a:hover, .d-bloc h6 a:hover, .d-bloc p a:hover{
+	color:rgba(255,255,255,1);
+}
+.d-bloc .navbar-toggle .icon-bar{
+	background:rgba(255,255,255,1);
+}
+.d-bloc .btn-wire,.d-bloc .btn-wire:hover{
+	color:rgba(255,255,255,1);
+	border-color:rgba(255,255,255,1);
+}
+.d-bloc .card{
+	color:rgba(0,0,0,.5);
+}
+.d-bloc .card button:hover{
+	color:rgba(0,0,0,.7);
+}
+.d-bloc .card icon{
+	border-color:rgba(0,0,0,.7);
+}
+.d-bloc .card .divider-h span{
+	border-color:rgba(0,0,0,.1);
+}
+.d-bloc .card .a-btn{
+	color:rgba(0,0,0,.6);
+}
+.d-bloc .card .a-btn:hover{
+	color:rgba(0,0,0,1);
+}
+.d-bloc .card .btn-wire, .d-bloc .card .btn-wire:hover{
+	color:rgba(0,0,0,.7);
+	border-color:rgba(0,0,0,.3);
 }
 
 
@@ -207,7 +264,7 @@ button{
 -------------------------------------------------------------- */
 
 h1,h2,h3,h4,h5,h6,p,label,.btn,a{
-	font-family:"Helvetica";
+	font-family:"Roboto";
 }
 .container{
 	max-width:1140px;
@@ -215,7 +272,7 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .hero-header-text{
 	font-size:200px;
 	font-weight:800;
-	font-family:"helvetica";
+	font-family:Roboto;
 }
 .hero-subheader{
 	font-size:35px;
@@ -236,10 +293,24 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	background:linear-gradient(0deg, rgba(255,255,255,0.0), #FFFFFF);
 	color:transparent!important;
 }
+.text-blue-gradient{
+	background-clip:text!important;
+	-webkit-background-clip:text!important;
+	background:linear-gradient(88deg, #61E1A3, #2F7DFF);
+	color:transparent!important;
+}
+.img-style{
+	height:220px;
+}
 
 /* = Colour
 -------------------------------------------------------------- */
 
+/* Background colour styles */
+
+.bgc-azure{
+	background-color:#0096FF;
+}
 
 /* Text colour styles */
 
@@ -249,25 +320,123 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 
 /* Link colour styles */
 
-.ltc-white{
-	color:#FFFFFF!important;
+.ltc-azure{
+	color:#0096FF!important;
 }
-.ltc-white:hover{
-	color:#cccccc!important;
+.ltc-azure:hover{
+	color:#0078cc!important;
 }
 
 /* Icon colour styles */
 
-.icon-white{
-	color:#FFFFFF!important;
-	border-color:#FFFFFF!important;
+.icon-azure{
+	color:#0096FF!important;
+	border-color:#0096FF!important;
 }
+
+/* Bloc image backgrounds */
 
 
 /* = Custom Bric Data
 -------------------------------------------------------------- */
 
-.waves-container {
+/* = Snap Scroll Pagination-------------------------------------------------------------- */.snap-scroll-pagination {
+		font-size:1.1em;
+		list-style: none;
+		padding:0 5px;
+		position:fixed;
+		left:20px;
+		top: 50%;
+	  	transform: translateY(-50%);
+		z-index: 10;
+}
+.right-align.snap-scroll-pagination{
+		right:20px;
+		left: initial;
+}
+.snap-scroll-paginate-bg.snap-scroll-pagination{
+		background: rgba(255,255,255,0.3);
+		border-radius: 6px;
+}
+.snap-scroll-pagination a {
+		display:block;
+		color:rgba(0,0,0,.8);
+		height:20px;
+		width: 20px;
+		margin:5px 0;
+		position:relative;
+}
+.snap-scroll-paginate-dashes a{
+		height:30px;
+		width:8px;
+}
+.snap-scroll-pagination a .hover-text {
+		color: rgba(0,0,0,0.5);
+		position:absolute;
+		display: none;
+		left:35px;
+		top:-5px;
+		opacity:0;
+		width:300px;
+		-webkit-transition: opacity 0.5s ease;
+		transition: opacity 0.5s ease;
+}
+.snap-scroll-paginate-dashes.snap-scroll-pagination a .hover-text{
+		top:2px;
+}
+.right-align.snap-scroll-pagination a .hover-text {
+		text-align:right;
+		right:35px;
+		left:initial;
+}
+.snap-scroll-pagination a:hover .hover-text {
+		opacity: 1;
+		display: inline-block;
+}
+.snap-scroll-pagination a:after {
+		content:"";
+		-webkit-transition:box-shadow 0.5s ease;
+		transition:box-shadow 0.5s ease;
+		width:10px;
+		height:10px;
+		display: block;
+		border:1px solid;
+		border-radius:50%;
+		position: absolute;
+		margin:auto;
+		top:0;
+		left:5px;
+		bottom:0;
+}
+.snap-scroll-paginate-dashes.snap-scroll-pagination a:after{
+		background-color: transparent;
+		width: 4px;
+		height:20px;
+		border-radius:0;
+		left:2px;
+		opacity: 0.5;
+}
+.snap-scroll-pagination a.active:after, .snap-scroll-paginate-dashes.snap-scroll-pagination a:after {
+		box-shadow:inset 0 0 0 5px;
+}
+.snap-scroll-pagination a.active:after{
+		opacity: 1;
+}
+.light-snap-scroll-theme.snap-scroll-pagination a, .light-snap-scroll-theme.snap-scroll-pagination a .hover-text{
+		color:#FFF;
+}
+.light-snap-scroll-theme.snap-scroll-paginate-bg{
+		background: rgba(0,0,0,0.3);
+}
+@media (max-width: 767px){
+		.snap-scroll-pagination{
+			left:5px;
+	}
+	.right-align.snap-scroll-pagination{
+			right:5px;
+			left: initial;
+	}
+}.waves-container {
 	max-width: 100%;
 	overflow: hidden;
 	position: absolute;
@@ -279,14 +448,20 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .waves-container canvas {
 	display: block;
 }
-#particles-js{
-	position: absolute;
-	height:100%;
-	width: 100%;
-	left: 0;
-	right:0;
-	top:0;
-	bottom: 0;
+.img-hover-tilt-container{
+	position:relative;
+	transform-style: preserve-3d;
+}
+.hover-tilt-label{
+	position:absolute;
+	top: 50%;
+	transform: translateY(-50%) translateZ(20px);
+	width:100%;
+	 text-align:center;
+	font-size:40px;
+}
+.hover-tilt-light-text{
+	color:rgba(255,255,255,.8);
 }
 
 
