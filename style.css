@@ -348,7 +348,7 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	max-width:1140px;
 }
 .h1-style{
-	font-family:"Droid Sans Mono";
+	font-family:Ubuntu;
 	font-weight:900;
 	font-size:80px;
 }
@@ -371,30 +371,30 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	font-weight:100;
 }
 .h1-38406-style{
-	font-family:"Droid Sans Mono";
+	font-family:Ubuntu;
 	font-size:20px;
 }
 .h1-30479-style{
 	font-size:20px;
-	font-family:"Droid Sans Mono";
+	font-family:Ubuntu;
 }
 .h1-4-style{
 	font-size:20px;
-	font-family:"Droid Sans Mono";
+	font-family:Ubuntu;
 }
 .bloc-divider-t-fill{
 	fill:#403BDF;
 }
 .h3-style{
 	font-size:49px;
-	font-family:"Droid Sans Mono";
+	font-family:Ubuntu;
 }
 .p-style{
 	font-size:24px;
-	font-family:"Droid Sans Mono";
+	font-family:Ubuntu;
 }
 .h1-6-style{
-	font-family:"Droid Sans Mono";
+	font-family:Ubuntu;
 }
 .bloc-divider-b-bloc-6-fill{
 	fill:#403BDF;
@@ -445,18 +445,6 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 /* = Custom Bric Data
 -------------------------------------------------------------- */
 
-.page-scroll-progress-bar{
-		top:0;
-		left:0;
-		right:0;
-		width:0;
-		position: fixed;
-		z-index: 999999;
-}
-.page-scroll-progress-bar.bottom-edge{
-	top: initial;
-	bottom: 0;
-}
 #particles-js{
 	position: absolute;
 	height:100%;
