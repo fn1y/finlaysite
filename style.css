@@ -1,5 +1,5 @@
 /*-----------------------------------------------------------------------------------
-	Finlay
+	Finlay Carson Moretti
 	About: A shiney new Blocs website.
 	Author: Finlay Carson Moretti
 	Version: 1.0
@@ -49,6 +49,9 @@ a:hover{text-decoration: none; cursor:pointer;}
 
 .bloc-lg{
 	padding:100px 20px;
+}
+.bloc-sm{
+	padding:20px;
 }
 
 /* = Full Screen Blocs 
@@ -153,6 +156,9 @@ a:hover{text-decoration: none; cursor:pointer;}
 	background: url("img/texture-geometry-shapes.png");
 	background-size: 280px 280px;
 }
+.texture-darken::before{
+	background: rgba(0,0,0,0.5);
+}
 
 
 /* Background Effects */
@@ -232,12 +238,54 @@ a:hover{text-decoration: none; cursor:pointer;}
 }
 
 
+/* Light theme */
+
+.d-bloc .card,.l-bloc{
+	color:rgba(0,0,0,.5);
+}
+.d-bloc .card button:hover,.l-bloc button:hover{
+	color:rgba(0,0,0,.7);
+}
+.l-bloc .icon-round,.l-bloc .icon-square,.l-bloc .icon-rounded,.l-bloc .icon-semi-rounded-a,.l-bloc .icon-semi-rounded-b{
+	border-color:rgba(0,0,0,.7);
+}
+.d-bloc .card .divider-h span,.l-bloc .divider-h span{
+	border-color:rgba(0,0,0,.1);
+}
+.d-bloc .card .a-btn,.l-bloc .a-btn,.l-bloc .navbar a,.l-bloc a .icon-sm, .l-bloc a .icon-md, .l-bloc a .icon-lg, .l-bloc a .icon-xl, .l-bloc h1 a, .l-bloc h2 a, .l-bloc h3 a, .l-bloc h4 a, .l-bloc h5 a, .l-bloc h6 a, .l-bloc p a{
+	color:rgba(0,0,0,.6);
+}
+.d-bloc .card .a-btn:hover,.l-bloc .a-btn:hover,.l-bloc .navbar a:hover, .l-bloc a:hover .icon-sm, .l-bloc a:hover .icon-md, .l-bloc a:hover .icon-lg, .l-bloc a:hover .icon-xl, .l-bloc h1 a:hover, .l-bloc h2 a:hover, .l-bloc h3 a:hover, .l-bloc h4 a:hover, .l-bloc h5 a:hover, .l-bloc h6 a:hover, .l-bloc p a:hover{
+	color:rgba(0,0,0,1);
+}
+.l-bloc .navbar-toggle .icon-bar{
+	color:rgba(0,0,0,.6);
+}
+.d-bloc .card .btn-wire,.d-bloc .card .btn-wire:hover,.l-bloc .btn-wire,.l-bloc .btn-wire:hover{
+	color:rgba(0,0,0,.7);
+	border-color:rgba(0,0,0,.3);
+}
+
+
 /* = NavBar
 -------------------------------------------------------------- */
 
 .hero .hero-nav{
 	padding-left:inherit;
 	padding-right:inherit;
+}
+.navbar-dark .nav .dropdown-menu .nav-link{
+	color: rgb(64, 64, 64);
+}
+/* = Sticky Nav
+-------------------------------------------------------------- */
+
+.sticky-nav.sticky{
+	position:fixed;
+	top:0;
+	z-index:1000;
+	box-shadow:0 1px 2px rgba(0,0,0,.3);
+	 transition: all .2s ease-out;
 }
 /* Handle Multi Level Navigation */.navbar-light .navbar-nav .nav-link {
 	color: rgb(64, 64, 64);
@@ -260,9 +308,25 @@ a:hover{text-decoration: none; cursor:pointer;}
 .mg-clear{
 	margin:0;
 }
+.mg-sm{
+	margin-top:10px;
+	margin-bottom:5px;
+}
 .mg-md{
 	margin-top:10px;
 	margin-bottom:20px;
+}
+img.mg-sm,img.mg-md,img.mg-lg{
+	margin-top: 0;
+}
+img.mg-sm{
+	margin-bottom:10px;
+}
+img.mg-md{
+	margin-bottom:30px;
+}
+img.mg-lg{
+	margin-bottom:50px;
 }
 
 /* = Buttons
@@ -278,18 +342,28 @@ button{
 	outline: none!important;
 }
 
-.btn-sq{
-	border-radius: 0px;
+.btn-rd{
+	border-radius: 40px;
 }
-.btn-clean{
-	border:1px solid rgba(0,0,0,.08);
-	border-bottom-color:rgba(0,0,0,.1);
-	text-shadow:0 1px 0 rgba(0,0,1,.1);
-	box-shadow: 0 1px 3px rgba(0,0,1,.25), inset 0 1px 0 0 rgba(255,255,255,.15);
+.btn-style-none,.btn-style-none:hover,.btn-style-none:active,.btn-style-none:focus{
+	background:none;
+	box-shadow: none;
+	padding:0;
+}
+.btn-wire{
+	background:transparent!important;
+	border:2px solid transparent;
+}
+.btn-wire:hover{
+	background:transparent!important;
+	border:2px solid transparent;
 }
 
 /* = Icons
 -------------------------------------------------------------- */
+.icon-md{
+	font-size:30px!important;
+}
 .icon-xl{
 	font-size:100px!important;
 }
@@ -297,6 +371,8 @@ button{
 
 
 
+/* = Cards
+-------------------------------------------------------------- */
 .card-sq, .card-sq .card-header, .card-sq .card-footer{
 	border-radius:0;
 }
@@ -326,9 +402,11 @@ button{
 	opacity:0;
 	z-index:999;
 	transition: all .3s ease-in-out;
+	pointer-events:none;
 }
 .showScrollTop{
 	opacity: 1;
+	pointer-events:all;
 }
 .scroll-to-top-btn-icon{
 	fill: none;
@@ -336,6 +414,34 @@ button{
 	stroke-width: 2px;
 	fill-rule: evenodd;
 	stroke-linecap:round;
+}
+/* = MacBook Devices
+-------------------------------------------------------------- */
+
+.blocsapp-device-mb{
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
+	display: block;
+	width:100%;
+	height:auto;
+	padding: 3.6% 15% 7.5%;
+}
+.blocsapp-device-mb img{
+	width:100%;
+	height:auto;
+	margin: 0 auto;
+}
+.blocsapp-device-mb .embed-responsive{
+	padding-bottom: 65%;
+	width: 103.1%;
+	left: -1.5%;
+}
+/* = MacBook Space Grey
+-------------------------------------------------------------- */
+
+.mb-space-grey{
+	background-image:url("img/Apple-Macbook-Space-Grey.png");
 }
 
 /* = Custom Styling
@@ -354,12 +460,13 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .bloc-divider-b-fill{
 	fill:#403BDF;
+	height:50px;
 }
 .h1-2-style{
 	font-family:Montserrat;
 }
 .link-style{
-	font-family:Lato;
+	font-family:Ubuntu;
 	font-weight:900;
 }
 .row-style{
@@ -384,6 +491,7 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .bloc-divider-t-fill{
 	fill:#403BDF;
+	height:50px;
 }
 .h3-style{
 	font-size:49px;
@@ -406,17 +514,60 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	padding-top:18px;
 	padding-bottom:18px;
 }
+.h3-1-style{
+	font-family:Ubuntu;
+}
+.p-bloc-6-style{
+	font-family:Ubuntu;
+}
+.img-style{
+	width:107px;
+}
+.img-image-288-29-style{
+	width:222px;
+}
+.p-8888-style{
+	font-family:Ubuntu;
+	width:100%;
+}
+.img-bloc-9-style{
+	width:107px;
+	height:107px;
+}
+.img-5-style{
+	width:132px;
+}
+.img-bloc-10-style{
+	width:107px;
+	height:107px;
+}
+.img-7-style{
+	height:54px;
+}
+.p-bloc-8-style{
+	font-family:Ubuntu;
+}
+.p-5-style{
+	font-family:Ubuntu;
+}
+.p-6-style{
+	font-family:Ubuntu;
+}
+.bloc-divider-b-style{
+	height:50px;
+	fill:#0F112C;
+}
 
 /* = Colour
 -------------------------------------------------------------- */
 
 /* Background colour styles */
 
-.bgc-black{
-	background-color:#000000;
-}
 .bgc-palatinate-blue{
 	background-color:#403BDF;
+}
+.bgc-white{
+	background-color:#FFFFFF;
 }
 .bgc-dark-jungle-green{
 	background-color:#0F112D;
@@ -430,8 +581,35 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .tc-white{
 	color:#FFFFFF!important;
 }
+.tc-dark-jungle-green{
+	color:#0F112D!important;
+}
 .tc-pale-cornflower-blue{
 	color:#B2B7FF!important;
+}
+
+/* Button colour styles */
+
+.wire-btn-french-rose{
+	color:#EA4C89!important;
+	border-color:#EA4C89!important;
+}
+.wire-btn-white{
+	color:#FFFFFF!important;
+	border-color:#FFFFFF!important;
+}
+.wire-btn-black{
+	color:#000000!important;
+	border-color:#000000!important;
+}
+
+/* Link colour styles */
+
+.ltc-white{
+	color:#FFFFFF!important;
+}
+.ltc-white:hover{
+	color:#cccccc!important;
 }
 
 /* Icon colour styles */
@@ -441,6 +619,17 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	border-color:#FFFFFF!important;
 }
 
+/* Bloc image backgrounds */
+
+.bg-image-20-289-29{
+	background-image:url("img/image%20%289%29.png");
+}
+.bg-Screenshot-202021-02-17-20at-208-29-27-20pm{
+	background-image:url("img/Screenshot%202021-02-17%20at%208.29.27%20pm.png");
+}
+.bg-image-20-2811-29{
+	background-image:url("img/image%20%2811%29.png");
+}
 
 /* = Custom Bric Data
 -------------------------------------------------------------- */
@@ -619,3 +808,13 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	   height: 320px;
     }
 }
+@media (max-width: 767px){
+	.text-right{
+	}
+	.text-left{
+	}
+	.text-center{
+	}
+	
+}
+

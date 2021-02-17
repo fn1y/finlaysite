@@ -2,9 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 <url>
 	<loc>https://finlays.space</loc>
-	<lastmod>2021-02-11</lastmod>
+	<lastmod>2021-02-17</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>1.0</priority>
+	<image:image>
+	<image:loc>https://finlays.space/img/Screenshot%202021-02-17%20at%208.03.38%20pm.png</image:loc>
+	<image:title>mbp%20screen</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://finlays.space/img/image%20%287%29.png</image:loc>
+	<image:title>image%2520%25287%2529</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://finlays.space/img/image%20%288%29.png</image:loc>
+	<image:title>image%2520%25288%2529</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://finlays.space/img/GitHub-Mark-Light-120px-plus.png</image:loc>
+	<image:title>placeholder%20image</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://finlays.space/img/GitHub_Logo_White.png</image:loc>
+	<image:title>GitHub_Logo_White</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://finlays.space/img/cv-icon-transparent.png</image:loc>
+	<image:title>cv%20icon-transparent</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://finlays.space/img/CV.png</image:loc>
+	<image:title>CV</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://finlays.space/img/</image:loc>
+	<image:title>Twitter Social Card Image</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://finlays.space/img/</image:loc>
+	<image:title>Facebook Social Card Image</image:title>
+	</image:image>
+</url>
+<url>
+	<loc>https://finlays.space/about-me/</loc>
+	<lastmod>2021-02-17</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
 	<image:image>
 	<image:loc>https://finlays.space/img/</image:loc>
 	<image:title>Twitter Social Card Image</image:title>
