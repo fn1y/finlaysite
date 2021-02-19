@@ -369,6 +369,16 @@ button{
 }
 
 
+/* = Text & Icon Styles
+-------------------------------------------------------------- */
+.blockquote{
+	padding:0 20px;
+	border-left:2px solid;
+}
+.blockquote.text-right{
+	border-left:0;
+	border-right:2px solid;
+}
 
 
 /* = Cards
@@ -556,6 +566,17 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .bloc-divider-b-style{
 	height:50px;
 	fill:#0F112C;
+}
+.h3-39634-style{
+	font-family:Ubuntu;
+	font-size:20px;
+}
+.h4-style{
+	font-family:Ubuntu;
+}
+.p-2-style{
+	font-size:22px;
+	font-family:Ubuntu;
 }
 
 /* = Colour
